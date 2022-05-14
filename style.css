@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: darkgreen;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+h1 {
+    padding: 0;
+    margin: 0;
+}
+
+span {
+    font-style: italic;
+}
+img {
+    width: 100%;
+}
+
+.circle-nav {
+    width: 200px;
+    height: 200px;
+    background:coral;
+    position: fixed;
+    border-radius: 50%;
+    z-index: 1;
+    left: -100px;
+    top: -100px;
+    transition: all 0.6s;
+}
+
+.circle-nav i {
+    transform: scale(1.8);
+    color:#fff;
+}
+
+.fa-align-justify {
+    position: absolute;
+    bottom: 20%;
+    right: 30%;
+    cursor: pointer;
+}
+
+.fa-times {
+    position: absolute;
+    bottom: 30%;
+    left: 20%;
+    cursor: pointer;
+}
+
+.rotate-circle {
+    transform: rotate(-90deg);
+}
+
+.rotate-container {
+    transform: rotate(-20deg);
+}
+
+.container {
+    background: #fff;
+    position: absolute;
+    transform-origin: top left;
+    width: 100%;
+    transition: ease-in 0.6s;
+    padding: 100px 0;
+}
+
+.article-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+nav {
+    position: fixed;
+    bottom: 70px;
+    left: -500px;
+    transition: ease-in-out 0.8s;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    padding-bottom: 30px;
+}
+
+nav i {
+    padding-right: 15px;
+}
+
+.show-menu {
+    left: 0;
+}
